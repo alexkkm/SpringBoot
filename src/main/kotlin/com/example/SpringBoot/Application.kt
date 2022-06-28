@@ -7,5 +7,7 @@ import org.springframework.boot.runApplication
 
 fun main(args: Array<String>) {
     runApplication<Application>(*args)
-    println("Sucussfully Running!")
+    println("Sucussfully Running in main!")
 }
+
+fun hello() {}

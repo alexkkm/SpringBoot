@@ -19,7 +19,15 @@ dependencies {
 	implementation("org.springframework.boot:spring-boot-starter")
 	implementation("org.jetbrains.kotlin:kotlin-reflect")
 	implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
+	implementation("org.springframework.boot:spring-boot-starter-web")
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
+	implementation("com.oracle.database.jdbc:ojdbc8:19.3.0.0")
+    implementation("com.oracle.database.jdbc:ucp:19.3.0.0")
+
+	val ociSdkVer = "2.24.0"
+    implementation("com.oracle.oci.sdk:oci-java-sdk-core:$ociSdkVer")
+    implementation("com.oracle.oci.sdk:oci-java-sdk-identity:$ociSdkVer")
+    implementation("com.oracle.oci.sdk:oci-java-sdk-objectstorage:$ociSdkVer")
 }
 
 tasks.withType<KotlinCompile> {
